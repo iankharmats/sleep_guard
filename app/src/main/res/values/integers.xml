@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default_preference_file_key">10</integer>
+    <integer name="preference_file_key" />
+</resources>

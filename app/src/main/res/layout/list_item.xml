@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mLayout"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/title"
+            style="@android:style/Widget.Material.Light.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:buttonTint="@color/subTopic"
+            android:fontFamily="@font/alata"
+            android:text="Название"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:theme="@style/Theme.Design.Light" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="42dp"
+        android:fontFamily="@font/alata"
+        android:text="часы"
+        android:textColor="#918E8E"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/alata"
+        android:text="минуты"
+        android:textColor="#918E8E"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/hours"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
